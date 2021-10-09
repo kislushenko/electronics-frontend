@@ -11,14 +11,11 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { I18nTestingModule, ProductSearchPage } from '@spartacus/core';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { ProductGridItemComponent } from '../../index';
-import { MediaComponent } from '../../../../../shared/components/media';
-import { SpinnerModule } from '../../../../../shared/components/spinner/spinner.module';
-import { ViewConfig } from '../../../../../shared/config/view-config';
-import { MockFeatureLevelDirective } from '../../../../../shared/test/mock-feature-level-directive';
 import { ViewModes } from '../../product-view/product-view.component';
 import { ProductListComponentService } from '../product-list-component.service';
 import { ProductScrollComponent } from './product-scroll.component';
 import createSpy = jasmine.createSpy;
+import {MediaComponent} from '@spartacus/storefront';
 
 const mockModel1: ProductSearchPage = {
   breadcrumbs: [
@@ -114,7 +111,7 @@ class MockStarRatingComponent {
 
 @Component({
   template: '',
-  selector: 'cx-product-list-item',
+  selector: 'app-product-list-item',
 })
 class MockProductListItemComponent {
   @Input()

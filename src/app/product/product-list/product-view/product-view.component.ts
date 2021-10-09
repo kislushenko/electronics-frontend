@@ -13,7 +13,7 @@ export enum ViewModes {
 }
 
 @Component({
-  selector: 'cx-product-view',
+  selector: 'app-product-view',
   templateUrl: './product-view.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

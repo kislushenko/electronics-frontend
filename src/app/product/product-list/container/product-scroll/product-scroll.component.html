@@ -7,11 +7,11 @@
     (scrolled)="scrollPage(model?.pagination?.currentPage + 1)"
   >
     <div class="row">
-      <cx-product-grid-item
+      <app-product-grid-item
         *ngFor="let product of model?.products"
         [product]="product"
         class="col-12 col-sm-6 col-md-4"
-      ></cx-product-grid-item>
+      ></app-product-grid-item>
     </div>
     <div
       [className]="
@@ -51,11 +51,11 @@
     [infiniteScrollDisabled]="isMaxProducts || isLastPage || isEmpty"
     (scrolled)="scrollPage(model?.pagination?.currentPage + 1)"
   >
-    <cx-product-list-item
+    <app-product-list-item
       *ngFor="let product of model?.products"
       [product]="product"
       class="cx-product-search-list"
-    ></cx-product-list-item>
+    ></app-product-list-item>
     <div
       [className]="
         !isLastPage && model?.pagination?.currentPage > 0

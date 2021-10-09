@@ -10,7 +10,7 @@ import { ProductListItemContextSource } from '../model/product-list-item-context
 import { ProductListItemContext } from '../model/product-list-item-context.model';
 
 @Component({
-  selector: 'cx-product-grid-item',
+  selector: 'app-product-grid-item',
   templateUrl: './product-grid-item.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [

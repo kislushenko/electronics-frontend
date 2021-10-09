@@ -17,7 +17,7 @@ import { FacetService } from '../services/facet.service';
 import {FocusConfig, ICON_TYPE} from '@spartacus/storefront';
 
 @Component({
-  selector: 'cx-facet-list',
+  selector: 'app-facet-list',
   templateUrl: './facet-list.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -50,7 +50,7 @@ export class FacetListComponent {
     trap: true,
     block: true,
     focusOnEscape: true,
-    autofocus: 'cx-facet',
+    autofocus: 'app-facet',
   };
 
   @HostListener('click') handleClick() {

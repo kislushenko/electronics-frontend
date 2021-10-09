@@ -8,7 +8,7 @@ import {PageLayoutService} from '@spartacus/storefront';
 import {ViewConfig} from '../../config/view-config';
 
 @Component({
-  selector: 'cx-product-list',
+  selector: 'app-product-list',
   templateUrl: './product-list.component.html',
 })
 export class ProductListComponent implements OnInit, OnDestroy {

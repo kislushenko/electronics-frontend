@@ -7,12 +7,12 @@
   {{ 'productList.filterBy.label' | cxTranslate }}
 </button>
 
-<cx-active-facets></cx-active-facets>
+<app-active-facets></app-active-facets>
 
-<cx-facet-list
+<app-facet-list
   *ngIf="isOpen$ | async"
   [isDialog]="hasTrigger"
   (closeList)="close()"
   [class.active]="isActive$ | async"
   [class.dialog]="hasTrigger"
-></cx-facet-list>
+></app-facet-list>

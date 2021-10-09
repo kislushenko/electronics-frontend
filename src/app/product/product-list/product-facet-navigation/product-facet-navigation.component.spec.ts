@@ -21,14 +21,14 @@ class MockCxIconComponent {
   @Input() type: ICON_TYPE;
 }
 @Component({
-  selector: 'cx-active-facets',
+  selector: 'app-active-facets',
   template: '',
 })
 class MockActiveFacetsComponent {
   @Input() facetList;
 }
 @Component({
-  selector: 'cx-facet-list',
+  selector: 'app-facet-list',
   template: '',
 })
 class MockFacetListComponent {
@@ -84,7 +84,7 @@ describe('ProductFacetNavigationComponent', () => {
         await fixture.whenStable();
         fixture.detectChanges();
 
-        const facetList = element.query(By.css('cx-facet-list'));
+        const facetList = element.query(By.css('app-facet-list'));
         expect(facetList).toBeNull();
       })
     );
@@ -108,7 +108,7 @@ describe('ProductFacetNavigationComponent', () => {
         await fixture.whenStable();
         fixture.detectChanges();
 
-        const facetList = element.query(By.css('cx-facet-list')).nativeElement;
+        const facetList = element.query(By.css('app-facet-list')).nativeElement;
         expect(facetList).toBeTruthy();
       })
     );
@@ -125,7 +125,7 @@ describe('ProductFacetNavigationComponent', () => {
         await fixture.whenStable();
         fixture.detectChanges();
 
-        const facetList = element.query(By.css('cx-facet-list')).nativeElement;
+        const facetList = element.query(By.css('app-facet-list')).nativeElement;
         facetList.dispatchEvent(new Event('closeList'));
 
         expect(component.close).toHaveBeenCalled();
@@ -146,7 +146,7 @@ describe('ProductFacetNavigationComponent', () => {
         await fixture.whenStable();
         fixture.detectChanges();
 
-        const facetList = element.query(By.css('cx-facet-list')).nativeElement;
+        const facetList = element.query(By.css('app-facet-list')).nativeElement;
         expect(facetList).toBeTruthy();
       })
     );

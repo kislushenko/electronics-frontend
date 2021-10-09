@@ -10,7 +10,7 @@ import { ProductListItemContext } from '../model/product-list-item-context.model
 import { ProductListOutlets } from '../../product-outlets.model';
 
 @Component({
-  selector: 'cx-product-list-item',
+  selector: 'app-product-list-item',
   templateUrl: './product-list-item.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [

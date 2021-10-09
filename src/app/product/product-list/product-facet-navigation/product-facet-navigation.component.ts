@@ -9,7 +9,7 @@ import { delayWhen, observeOn, switchMap } from 'rxjs/operators';
 import {BreakpointService, ICON_TYPE} from '@spartacus/storefront';
 
 @Component({
-  selector: 'cx-product-facet-navigation',
+  selector: 'app-product-facet-navigation',
   templateUrl: './product-facet-navigation.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

@@ -45,7 +45,7 @@ class MockPageLayoutService {
 
 @Component({
   template: '',
-  selector: 'cx-product-list-item',
+  selector: 'app-product-list-item',
 })
 class MockProductListItemComponent {
   @Input()

@@ -16,7 +16,7 @@ import { FacetService } from '../services/facet.service';
 import {FocusDirective, ICON_TYPE} from '@spartacus/storefront';
 
 @Component({
-  selector: 'cx-facet',
+  selector: 'app-facet',
   templateUrl: './facet.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

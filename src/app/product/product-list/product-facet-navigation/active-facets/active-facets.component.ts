@@ -10,7 +10,7 @@ import {ICON_TYPE} from '@spartacus/storefront';
  * which can be used to remove the applied facet value.
  */
 @Component({
-  selector: 'cx-active-facets',
+  selector: 'app-active-facets',
   templateUrl: './active-facets.component.html',
   changeDetection: ChangeDetectionStrategy.Default,
 })

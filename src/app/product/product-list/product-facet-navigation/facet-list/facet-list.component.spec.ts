@@ -29,7 +29,7 @@ class MockIconComponent {
 }
 
 @Component({
-  selector: 'cx-facet',
+  selector: 'app-facet',
   template: '',
 })
 class MockFacetComponent {
@@ -108,7 +108,7 @@ describe('FacetListComponent', () => {
   });
 
   it('should render facets', () => {
-    expect(element.queryAll(By.css('cx-facet')).length).toEqual(1);
+    expect(element.queryAll(By.css('app-facet')).length).toEqual(1);
   });
 
   it('should emit expandFacetGroup when handling unlock', () => {
@@ -116,7 +116,7 @@ describe('FacetListComponent', () => {
     component.isDialog = true;
     fixture.detectChanges();
 
-    const container = element.queryAll(By.css('cx-facet'));
+    const container = element.queryAll(By.css('app-facet'));
     (container[0].nativeElement as HTMLElement).dispatchEvent(
       new Event('unlock')
     );
@@ -198,14 +198,14 @@ describe('FacetListComponent', () => {
 
     it('should have collapsed class', () => {
       fixture.detectChanges();
-      const el = element.queryAll(By.css('cx-facet'));
+      const el = element.queryAll(By.css('app-facet'));
       const e = el[0];
       expect(e.nativeElement.classList).toContain('collapsed');
     });
 
     it('should not have expanded class', () => {
       fixture.detectChanges();
-      const el = element.queryAll(By.css('cx-facet'));
+      const el = element.queryAll(By.css('app-facet'));
       const e = el[0];
       expect(e.nativeElement.classList).not.toContain('expanded');
     });
@@ -240,14 +240,14 @@ describe('FacetListComponent', () => {
 
     it('should not have collapsed class', () => {
       fixture.detectChanges();
-      const el = element.queryAll(By.css('cx-facet'));
+      const el = element.queryAll(By.css('app-facet'));
       const e = el[0];
       expect(e.nativeElement.classList).not.toContain('collapsed');
     });
 
     it('should have expanded class', () => {
       fixture.detectChanges();
-      const el = element.queryAll(By.css('cx-facet'));
+      const el = element.queryAll(By.css('app-facet'));
       const e = el[0];
       expect(e.nativeElement.classList).toContain('expanded');
     });

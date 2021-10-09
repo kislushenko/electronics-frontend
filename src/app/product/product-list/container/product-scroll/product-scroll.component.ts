@@ -6,7 +6,7 @@ import { ProductListComponentService } from '../product-list-component.service';
 import {ViewConfig} from '../../../config/view-config';
 
 @Component({
-  selector: 'cx-product-scroll',
+  selector: 'app-product-scroll',
   templateUrl: './product-scroll.component.html',
 })
 export class ProductScrollComponent implements OnDestroy {

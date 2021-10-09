@@ -5,6 +5,6 @@ export enum ProductDetailOutlets {
   SUMMARY = 'PDP.SUMMARY',
 }
 export enum ProductListOutlets {
-  ITEM_ACTIONS = 'cx-product-list-item.actions',
-  ITEM_DETAILS = 'cx-product-list-item.details',
+  ITEM_ACTIONS = 'app-product-list-item.actions',
+  ITEM_DETAILS = 'app-product-list-item.details',
 }
